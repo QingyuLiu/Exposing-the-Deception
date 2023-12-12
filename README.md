@@ -16,8 +16,8 @@ Our code is evaluated on `Python 3.8.11` and `CUDA 11.7`.
 
 ## Training
 ### Prepare Datasets
-- Prepare face forgery datasets: FaceForensics++(https://github.com/ondyari/FaceForensics), Celeb-DF-V1(https://github.com/yuezunli/celeb-deepfakeforensics), Celeb-DF-V2(https://github.com/yuezunli/celeb-deepfakeforensics), DFDC-Preview(https://ai.meta.com/datasets/dfdc/), DFDC(https://www.kaggle.com/c/deepfake-detection-challenge/data)
-- Preprocess the video: extract frames from videos, and then extract facial images using RetinaFace(https://github.com/biubug6/Pytorch_Retinaface). 
+- Prepare face forgery datasets: [FaceForensics++](https://github.com/ondyari/FaceForensics), [Celeb-DF-V1](https://github.com/yuezunli/celeb-deepfakeforensics), [Celeb-DF-V2](https://github.com/yuezunli/celeb-deepfakeforensics), [DFDC-Preview](https://ai.meta.com/datasets/dfdc/), [DFDC](https://www.kaggle.com/c/deepfake-detection-challenge/data)
+- Preprocess the video: extract frames from videos, and then extract facial images using [RetinaFace](https://github.com/biubug6/Pytorch_Retinaface). 
 To train or test the model, you should provide a dataset path and label txt, which need to have the following folder structure. 
 ```Shell
 dataset
