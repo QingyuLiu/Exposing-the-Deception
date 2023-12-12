@@ -1,4 +1,5 @@
 # Exposing the Deception: Uncovering More Forgery Clues for Deepfake Detection
+![](https://github.com/QingyuLiu/Exposing-the-Deception/blob/main/framework.pdf)
 This repo is the official implementation of “Exposing the Deception: Uncovering More Forgery Clues for Deepfake Detection”. Accepted by AAAI-2024.
 
 ## Installation
