@@ -35,8 +35,9 @@ dataset
 ```
 
 ### Train Models
+You should make `output` and `logs` folders to save files of model and log before running the following command.
 After preprocessing datasets, you can detect anomalies with various settings using the following command:
-
+(You should make `output` and `logs` folders to save files of the model and log before running the following command.)
 ```
 python training.py  --name                                      \
 
