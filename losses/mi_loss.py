@@ -49,14 +49,14 @@ class loss_functions():
             global_mi_loss = self.mi_calculator(self.softmax(p_y_given_f1_f2_f3_f4.detach() / self.temperature).log(),
                                                 self.softmax(p_y_given_z / self.temperature))
 
-        # for visulization
-        try:
-            p_y_given_fi=out_dict['p_y_given_f_i']
-            model_size=len(p_y_given_fi)
-            for out_v in p_y_given_fi:
-                ce_loss = ce_loss + 1/model_size*loss_fn(out_v, y)
-        except:
-            print("no p_y_given_f_i")
+        # # for visulization
+        # try:
+        #     p_y_given_fi=out_dict['p_y_given_f_i']
+        #     model_size=len(p_y_given_fi)
+        #     for out_v in p_y_given_fi:
+        #         ce_loss = ce_loss + 1/model_size*loss_fn(out_v, y)
+        # except:
+        #     print("no p_y_given_f_i")
 
         # Local Information Loss
         if self.lil_loss:
