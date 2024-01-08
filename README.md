@@ -35,9 +35,7 @@ dataset
 ```
 
 ### Train Models
-You should make `output` and `logs` folders to save files of model and log before running the following command.
-After preprocessing datasets, you can detect anomalies with various settings using the following command:
-(You should make `output` and `logs` folders to save files of the model and log before running the following command.)
+You should make `output` and `logs` folders to save files of the model and log before running the following command.
 ```
 python training.py  --name                                      \
 
@@ -77,7 +75,7 @@ The following is a description of some parameters in the configuration file:
 - `dataset`: is the dataset name, which corresponds to `dataset/{dataset_name}` path.
 - `lil_loss`, `gil_loss`: `True` is to use Local Information Loss or Gocal Information Loss proposed by our work.
 - `mi_calculator`: is the algorithm to calculate the mutual information, which supports KL divergence and Wasserstein distance.
-- `balance_loss_method`: is the method for determining $\alpha$ and $\beta$ in equation (13) of the paper, and supports auto and hyper. If it is hyper, "scales" is the setting of weights, which respectively represent the weights of classification loss, local information loss and Gocal information loss.
+- `balance_loss_method`: is the method for determining $\alpha$ and $\beta$ in equation (13) of the paper, and supports auto and hyper. If it is hyper, `scales` is the setting of weights, which respectively represent the weights of classification loss, the local information loss, and the global information loss.
 - `num_LIBs`: is the number of Local Information Block.
 
 
